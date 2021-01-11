@@ -4,7 +4,7 @@
 }
 #game{
     width: 1900px;
-    height: 970px;
+    height: 960px;
 }
 #character{
     width: 20px;
@@ -15,6 +15,12 @@
 }
 .animate{
     animation: jump 500ms infinite;
+}
+.mario {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 500px;
 }
 @keyframes jump{
     0%{top: 150px;}
@@ -27,8 +33,8 @@
     height: 20px;
     background-color: blue;
     position: relative;
-    top: 130px;
-    left: 480px;
+    top: 0px;
+    left: 0px;
     animation: block 1s infinite;
 }
 @keyframes block{
