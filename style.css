@@ -3,9 +3,8 @@
     margin: 0;
 }
 #game{
-    width: 1920;
-    height: 1080px;
-    border: 1px solid black;
+    width: 1900px;
+    height: 970px;
 }
 #character{
     width: 20px;
