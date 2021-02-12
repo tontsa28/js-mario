@@ -1,4 +1,4 @@
-var character = document.getElementById("character");
+var character = document.getElementById("mario");
 var block = document.getElementById("block");
 function jump(){
     if(character.classList != "animate"){
