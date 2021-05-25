@@ -1,43 +1,64 @@
-*{
-    padding: 0;
-    margin: 0;
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
 }
-#game{
-    width: 1900px;
-    height: 960px;
-}
-#character{
-    width: 20px;
-    height: 50px;
-    background-color: red;
+
+#mario {
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    background-image: url(assets/mario_64pixel.png);
+    background-size: 64px 64px;
     position: relative;
     top: 150px;
 }
-.animate{
-    animation: jump 500ms infinite;
+
+.jump {
+    animation: jump 0.5s linear;
 }
-.mario {
-    width: 128px;
-    height: 128px;
-    position: absolute;
-    left: 500px;
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    25% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    75% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
 }
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
-}
-#block{
-    width: 20px;
-    height: 20px;
-    background-color: blue;
+
+#pipe {
+    width: 64px;
+    height: 64px;
     position: relative;
-    top: 0px;
-    left: 0px;
-    animation: block 1s infinite;
+    top: 87px;
+    left: 536px;
+    background-color: transparent;
+    background-image: url(assets/mario_64pixel.png); /* This needs to be changed to its proper image once done */
+    background-size: 64px 64px;
+    animation: block 1s infinite linear;
 }
-@keyframes block{
-    0%{left: 480px;}
-    100%{left: -40px;}
+
+@keyframes block {
+    0% {
+        left: 536px;
+    }
+
+    100% {
+        left: -64px;
+    }
 }
