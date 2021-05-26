@@ -1,6 +1,7 @@
 const mario = document.getElementById("mario");
 const pipe = document.getElementById("pipe");
 
+// Jump function
 function jump() {
     if (mario.classList != "jump") {
         mario.classList.add("jump");
@@ -10,6 +11,7 @@ function jump() {
     }
 }
 
+// Check if Mario is still alive and hasn't hit a pipe
 let isAlive = setInterval(function () {
     let marioTop = parseInt(window.getComputedStyle(mario).getPropertyValue("top"));
     let pipeLeft = parseInt(window.getComputedStyle(pipe).getPropertyValue("left"));
@@ -19,6 +21,7 @@ let isAlive = setInterval(function () {
     }
 }, 10);
 
+// Listen for keypresses
 document.addEventListener("keydown", function (event) {
     jump();
 });
